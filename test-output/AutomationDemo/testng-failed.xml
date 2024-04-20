@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AutomationDemo]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite thread-count="4" parallel="tests" name="Failed suite [AutomationDemo]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="edge(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="automationdemopack.RegisterTest">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- automationdemopack.RegisterTest -->
     </classes>
-  </test> <!-- firefox(failed) -->
+  </test> <!-- edge(failed) -->
 </suite> <!-- Failed suite [AutomationDemo] -->

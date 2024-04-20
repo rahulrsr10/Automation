@@ -2,16 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T23:36:01 IST" name="Default suite" finished-at="2024-04-19T23:36:04 IST" duration-ms="3313">
+  <suite started-at="2024-04-20T16:34:53 IST" name="AutomationDemo" finished-at="2024-04-20T16:35:35 IST" duration-ms="41934">
     <groups>
     </groups>
-    <test started-at="2024-04-19T23:36:01 IST" name="Default test" finished-at="2024-04-19T23:36:04 IST" duration-ms="3313">
-      <class name="automationdemopack.APITesting">
-        <test-method signature="testSinglePageResponse()[pri:0, instance:automationdemopack.APITesting@4802796d]" started-at="2024-04-19T23:36:01 IST" name="testSinglePageResponse" finished-at="2024-04-19T23:36:04 IST" duration-ms="3248" status="PASS">
+    <test started-at="2024-04-20T16:34:53 IST" name="chrome" finished-at="2024-04-20T16:35:35 IST" duration-ms="41934">
+      <class name="automationdemopack.RegisterTest">
+        <test-method is-config="true" signature="startup(java.lang.String)[pri:0, instance:automationdemopack.RegisterTest@36fc695d]" started-at="2024-04-20T16:34:53 IST" name="startup" finished-at="2024-04-20T16:35:24 IST" duration-ms="30603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSinglePageResponse -->
-      </class> <!-- automationdemopack.APITesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- startup -->
+        <test-method signature="testRegiterFunctionality()[pri:0, instance:automationdemopack.RegisterTest@36fc695d]" started-at="2024-04-20T16:35:24 IST" name="testRegiterFunctionality" finished-at="2024-04-20T16:35:30 IST" duration-ms="6049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegiterFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:automationdemopack.RegisterTest@36fc695d]" started-at="2024-04-20T16:35:30 IST" name="teardown" finished-at="2024-04-20T16:35:35 IST" duration-ms="5238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- automationdemopack.RegisterTest -->
+    </test> <!-- chrome -->
+  </suite> <!-- AutomationDemo -->
 </testng-results>

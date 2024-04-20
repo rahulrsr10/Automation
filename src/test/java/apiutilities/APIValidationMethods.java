@@ -1,4 +1,4 @@
-package automationdemopack;
+package apiutilities;
 
 import org.testng.Assert;
 
