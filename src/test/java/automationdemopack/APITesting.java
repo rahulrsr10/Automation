@@ -20,7 +20,7 @@ public class APITesting {
 		JsonPath jsonPathEvaluator = response.jsonPath();
 		String page = jsonPathEvaluator.get("data[0].email");
 		System.out.println(page);
-		ValidationMethods.statusValidation(response.getStatusCode(), 200, response.statusLine().split(" ")[2], "OK");
+		APIValidationMethods.statusValidation(response.getStatusCode(), 200, response.statusLine().split(" ")[2], "OK");
 	}
 
 	@Test
@@ -28,7 +28,7 @@ public class APITesting {
 		RestAssured.baseURI = "https://reqres.in/api/users/2";
 		RequestSpecification request = RestAssured.given();
 		Response response = request.request(Method.GET);
-		ValidationMethods.statusValidation(response.getStatusCode(), 200, response.statusLine().split(" ")[2], "OK");
+		APIValidationMethods.statusValidation(response.getStatusCode(), 200, response.statusLine().split(" ")[2], "OK");
 	}
 
 	@Test
@@ -36,7 +36,7 @@ public class APITesting {
 		RestAssured.baseURI = "https://reqres.in/api/users/23";
 		RequestSpecification request = RestAssured.given();
 		Response response = request.request(Method.GET);
-		ValidationMethods.statusValidation(response.getStatusCode(), 404,
+		APIValidationMethods.statusValidation(response.getStatusCode(), 404,
 				response.statusLine().split(" ")[2] + " " + response.statusLine().split(" ")[3], "Not Found");
 	}
 
@@ -49,7 +49,7 @@ public class APITesting {
 		RequestSpecification request = RestAssured.given().body(result);
 		request.header("Content-Type", "application/json");
 		Response response = request.request(Method.POST);
-		ValidationMethods.statusValidation(response.getStatusCode(), 201, response.statusLine().split(" ")[2],
+		APIValidationMethods.statusValidation(response.getStatusCode(), 201, response.statusLine().split(" ")[2],
 				"Created");
 	}
 	
